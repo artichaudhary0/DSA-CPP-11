@@ -41,8 +41,7 @@ int main()
                         : (score <50 && score>=0)
                             ? grade = 'F',cout<<"Your grade is F"<<endl
                             : cout<<""
-    : cout<<"You have entered invalid scroe"<<endl ;
-
+    : cout<<"You have entered invalid scroe"<<endl;
 
     switch (grade)
     {
@@ -68,15 +67,10 @@ int main()
         break;
     }
 
-
-
-
     if(grade>= 'A' && grade <='E')
     {
         cout<<"Congo.";
     }else{
         cout<<"Better luck next time";
     }
-
-
 }
