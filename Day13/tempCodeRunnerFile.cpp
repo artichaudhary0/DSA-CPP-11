@@ -251,62 +251,27 @@ int main()
 
     // check pallindrom , 11223332211
 
-    // int num = 1253521,rev = 0,count = 0;
-    // // to get last value use number (%10)
-    // int orginal = num ;
-
-    // while(num > 0) 
-    // {
-
-    //     rev =  rev*10 + num%10;
-    //     count++;
-    //     num = num/10 ;  
-    // }
-   
-    // if(orginal == rev)
-    // {
-    //     cout<<"pallindrom";
-    // }else{
-    //     cout<<"Not pallindrom";
-    // }
-    
-
-
-    // sum of digits : 
-    int num = 123,sum = 0;
-
+    int num = 211424,rev = 0,count = 0;
+    // to get last value use number (%10)
+    int orginal = num ;
 
     while(num > 0) 
     {
 
-        sum = sum + num%10;
+        rev =  rev*10 + num%10;
+        count++;
         num = num/10 ;  
-
-        /*
-        step 1 : num = 123 , sum = 0 
-
-            loop 1 :
-            step 2 : num>0 true
-            step 3 : sum = sum + num%10 => sum = 0 + 3 => 3
-            step 4 : 12
-            
-            loop 2 :
-            step 2 : num>0 true
-            step 3 : sum = sum + num%10 => 3 + 2 => 5
-            step 4 : 1
-
-            loop 3 :
-            step 2 : num>0 true
-            step 3 : sum = sum + num%10 => 5 + 1 => 6
-            step 4 : 0
-
-            loop 4 : exit
-
-        
-        */
     }
    
-    cout<<sum;
+    if(orginal == rev)
+    {
+        cout<<"pallindrom"
+    }esle{
+        cout<<"Not pallindrom"
+    }
     
+
+
+
 
 }
