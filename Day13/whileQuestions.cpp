@@ -36,11 +36,10 @@ count digits in a number
 
 sum of digits
 
-check prime number
+check prime number : 
 
 fibonacci series
 
-gcd of two numbers. 
 */
 
 int main()
@@ -273,40 +272,126 @@ int main()
 
 
     // sum of digits : 
-    int num = 123,sum = 0;
+    // int num = 123,sum = 0;
 
 
-    while(num > 0) 
-    {
+    // while(num > 0) 
+    // {
 
-        sum = sum + num%10;
-        num = num/10 ;  
+    //     sum = sum + num%10;
+    //     num = num/10 ;  
 
-        /*
-        step 1 : num = 123 , sum = 0 
+    //     /*
+    //     step 1 : num = 123 , sum = 0 
 
-            loop 1 :
-            step 2 : num>0 true
-            step 3 : sum = sum + num%10 => sum = 0 + 3 => 3
-            step 4 : 12
+    //         loop 1 :
+    //         step 2 : num>0 true
+    //         step 3 : sum = sum + num%10 => sum = 0 + 3 => 3
+    //         step 4 : 12
             
-            loop 2 :
-            step 2 : num>0 true
-            step 3 : sum = sum + num%10 => 3 + 2 => 5
-            step 4 : 1
+    //         loop 2 :
+    //         step 2 : num>0 true
+    //         step 3 : sum = sum + num%10 => 3 + 2 => 5
+    //         step 4 : 1
 
-            loop 3 :
-            step 2 : num>0 true
-            step 3 : sum = sum + num%10 => 5 + 1 => 6
-            step 4 : 0
+    //         loop 3 :
+    //         step 2 : num>0 true
+    //         step 3 : sum = sum + num%10 => 5 + 1 => 6
+    //         step 4 : 0
 
-            loop 4 : exit
+    //         loop 4 : exit
 
         
-        */
-    }
+    //     */
+    // }
    
-    cout<<sum;
-    
+    // cout<<sum;
 
+
+    // int num ;
+    // cout<<"Enter number : ";
+    // cin>>num;
+    // // 2 % 2 => 0 prime no.
+
+    // // 3 % 2 => 1  prime no.
+    // // 3 % 3 => 0
+
+    // // 4  % 2 => 0 not a prime no.
+    // // 4  % 3 => 1
+    // // 4  % 4 => 0
+
+    // // 5 % 2 => 1 prime no.
+    // // 5 % 3 => 2
+    // // 5 % 4 => 1
+    // // 5 % 5 => 0
+
+
+    // // 10 % 2 => 0
+    // // 10 % 3 => 1
+    // // 10 % 4 => 2
+    // // 10 % 5 => 0
+    // // 10 % 6 => 4
+    // // 10 % 7 => 3
+    // // 10 % 8 => 2
+    // // 10 % 9 => 1
+    // // 10 % 10 => 0
+
+    // // 15 % 2 => 1
+    // // 15 % 3 => 0
+    // // 15 % 4 => 3
+    // // 15 % 5 => 0
+    // // 15 % 6 => 3
+    // // 15 % 7 => 1
+    // // 15 % 8 => 7
+    // // 15 % 9 => 6
+    // // 15 % 10 => 5
+    // // 15 % 11 => 4
+    // // 15 % 12 => 3
+    // // 15 % 13 => 2
+    // // 15 % 14 => 1
+    // // 15 % 15 => 0
+
+    // int i = 2 ;
+    // // bool isPrime = false;
+    // int count = 0;
+
+    // while(i< num/2){
+
+    //     if(num % i == 0)
+    //     {
+    //         count ++;
+    //     }
+    //     i++;
+    // }
+
+    // if(count == 0)
+    // {
+    //     cout<<"prime";
+    // }else{
+    //     cout<<"Not prime";
+    // }
+
+
+    // fibonacci : 
+
+    int firstTerm ;
+    int secondTerm ;
+    int nextTerm ;
+    int n , i = 1 ;
+
+    cout<<"Enter first term : ";
+    cin>>firstTerm;
+    cout<<"Enter Second term : ";
+    cin>>secondTerm;
+
+    cout<<"Enter no. upto which you want to print series : ";
+    cin>>n;
+
+    while(i<= n){
+        cout<<firstTerm<<" ";
+        nextTerm = firstTerm + secondTerm;
+        firstTerm = secondTerm;
+        secondTerm = nextTerm;
+        i++;
+    }
 }
