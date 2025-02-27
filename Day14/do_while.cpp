@@ -148,3 +148,66 @@ int main()
         exit
     */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// Online C++ compiler to run C++ program online
+// #include <iostream>
+// using namespace std ;
+
+// int main() {
+    
+    
+//     // a b c  d ... z starting a end z
+    
+//     // char start = 'a';
+//     // char end = 'z';
+    
+//     // do{
+//     //     cout<<start<<" ";
+//     //     start = start + 4; // a + b + c + d + e
+        
+//     // }while(start <= end);
+    
+//     int num = 345;
+//     int last = num%10 ;
+//     int first = 0 ;
+//     // cout<<last;
+    
+//     while(num>0)
+//     {
+//         first = num;
+//         num = num/10;
+//     }
+//     /*
+//         step 1 : num = 345 , last = 5 , first = 0
+//         loop 1 : 
+//             step 2 : num>0 true
+//             step 3 : first = num => 345
+//             step 4 : num = 34
+//         loop 2 : 
+//             step 2 : num> 0 => 34 > 0 true
+//             step 3 : first = num => 34
+//             step 4 : num = 3
+//         loop 3 :
+//             step 2 : num>0 => 3 > 0 true
+//             step 3 : first => num  3
+//             step 4 : num = 0 
+//         loop 4 : 
+//             step 2 : 0>0 false
+    
+//     */
+    
+//     cout<<last + first;
+
+//     return 0;
+// }

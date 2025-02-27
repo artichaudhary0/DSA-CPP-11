@@ -12,8 +12,6 @@ sum of digits
 check prime number : 
 fibonacci series
 
-
-
 Entry control :
 for loop : 
 
@@ -21,8 +19,6 @@ for(init ; condition ; flow)
 {
     // statements
 }
-
-
 */
 
 int main()

@@ -4,18 +4,18 @@
     Data type : 
         1 : Primitive :
             1 : Integer : whole number (decimal point is not included) 4645
-                    int 
-                    short int 
+                    int (4)
+                    short int (2)
                     long int
                     long long int
                     unsigned int
 
             2 : floating point type (decimal points are included) 4645.5464
-                    float
-                    double 
+                    float (4)
+                    double (8)
                     long double 
 
-            3 : character type :
+            3 : character type : (1)
                     char : 'A' , 'a' , '1' , '@' , ' '
 
             4 : Boolean : 
