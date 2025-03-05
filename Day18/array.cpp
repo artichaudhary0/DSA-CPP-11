@@ -127,23 +127,22 @@ int main()
 
     // Maximum or minimum
 
-    int array[] = {1 , 2, 23, 67,5,34,53,64}; // reverse 64 53 34 5 67 23 2 1
-                //   0 1  2   3  4  5  6  7  
-    int size = sizeof(array)/sizeof(array[0]);
+    // int array[] = {1 , 2, 23, 67,5,34,53,64}; // reverse 64 53 34 5 67 23 2 1
+    //             //   0 1  2   3  4  5  6  7               0  1  2 3  4 5  6 7
+    // int size = sizeof(array)/sizeof(array[0]);
 
-    int max = array[0];
-    //  step 1      step 2     step 4
-    for(int i = 1 ; i < size ; i++ )
-    {
-        // step 3
-        if (!(max > array[i])) // max > array true(inter no)
-        {
-            max = array[i] ;
-        }
-    }
+    // int max = array[0];
+    // //  step 1      step 2     step 4
+    // for(int i = 1 ; i < size ; i++ )
+    // {
+    //     // step 3
+    //     if (!(max > array[i])) // max > array true(inter no)
+    //     {
+    //         max = array[i] ;
+    //     }
+    // }
 
-
-    cout<<max; 
+    // cout<<max; 
 
     /*
     Logic : 
@@ -183,7 +182,129 @@ int main()
     */
 
 
-    // min , reverse an array
+    // min , reverse an array : 
+    int array[] = {1 , 2, 23, 67,5,34,53,64}; // reverse 64 53 34 5 67 23 2 1
+                //  0  1  2   3  4  5  6  7               0  1  2 3  4 5  6 7
+    int size = sizeof(array)/sizeof(array[0]); // 8 
+
+    int left = 0; // 
+    int right = size - 1; // 7
+
+    //  step1       step 2  step 4
+    for(int i = 0 ; left < right ; i++ )
+    {
+        // step 3
+        int num3 = array[left] ; 
+        array[left]  = array[right]  ; 
+      
+        
+
+        left = left + 1 ;
+        right = right - 1 ;
+        /*
+        int array[] = {1 , 2, 23, 67,5,34,53,64}; // reverse 64 53 34 5 67 23 2 1
+                    //  0  1  2   3  4  5  6  7               0  1  2 3  4 5  6 7
+            step 1 : i= 0 , left = 0 , right = 7
+            loop 1 : 
+                step 2 : left < right 0 < 7 true
+                step 3 : 
+                    int num3 = array[0] => 1
+                    array[0] => array[7] => 64
+                    array[7] => 1 
+                    left= 1
+                    right=6 
+                step 4 : i++
+            loop 2 :    
+                step 2 : left < right 1 < 6 true
+                step 3 : 
+                    int num3 = array[1] => 2
+                    array[1] => array[6] => 53
+                    array[6] => 2 
+                    left= 2
+                    right=5 
+                step 4 : i++
+
+            loop 3 :    
+                step 2 : left < right 2 < 5 true
+                step 3 : 
+                    int num3 = array[2] => 23
+                    array[2] => array[5] => 34
+                    array[5] => 23 
+                    left= 3
+                    right=4 
+                step 4 : i++
+
+            loop 4 :    
+                step 2 : left < right 3 < 4 true
+                step 3 : 
+                    int num3 = array[3] => 67
+                    array[3] => array[4] => 5
+                    array[4] => 67 
+                    left= 4
+                    right=3 
+                step 4 : i++
+            loop 5 :
+                step 2 : exit left < right 4 < 3 false     
+
+                array[0] = 64
+                array[1] = 53
+                array[2] = 34
+                array[3] = 5
+                array[4] = 67
+                array[5] = 23
+                array[6] = 2
+                array[7] = 1
+        */
+    }
+
+    for(int i = 0 ; i<size ; i++ )
+    {
+        cout<<"array["<<i<<"] :"<<array[i]<<endl;
+    }
+
+
+
+    // int num3 = array[left] ; // num3 = num1 => 23
+    // array[left]  = array[right]  ; // num2 = 234
+    // array[right] = num3 ; // num1 = 23
+
+    // cout<<array[0] <<" "<<array[size-1];
+
+    // left = 1 ; // +1
+    // right=(size-1) - 1;
+
+    // num3 = array[left] ; // num3 = num1 => 23
+    // array[left]  = array[right]  ; // num2 = 234
+    // array[right] = num3 ; // num1 = 23
+
+    // cout<<array[0+1] <<" "<<array[size-1-1];
+
+
+    // left = 2 ; // +1
+    // right=(size-1) - 1 - 1;
+
+    // num3 = array[left] ; 
+    // array[left]  = array[right]  ; 
+    // array[right] = num3 ; 
+
+    // cout<<array[1+1] <<" "<<array[size-1-1-1];
+
+    // left = 2 + 1;
+    // right = (size-1) -1-1-1;
+
+    // num3 = array[left] ; 
+    // array[left]  = array[right]  ; 
+    // array[right] = num3 ; 
+
+    // cout<<array[1+1+1] <<" "<<array[size-1-1-1-1];
+
+
+
+
+
+
+
+
 
 
 
