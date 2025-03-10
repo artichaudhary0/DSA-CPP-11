@@ -9,8 +9,6 @@ using namespace std;
         1 : length of array : 
             size = sizeof(array)/sizeof(array[0]) 
             sum of all the value
-
-
 */
 
 int main()
