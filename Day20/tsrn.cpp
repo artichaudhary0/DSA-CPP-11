@@ -67,9 +67,9 @@ int main()
                 cout<<"Invalid choice";
                 break;
             }
-            }else{
-                cout<<"Invalid input";
-            }
+        }else{
+            cout<<"Invalid input";
+        }
     return 0;
 }
 
